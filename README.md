@@ -11,16 +11,24 @@
 - Run the project in development mode and monitor production deployment through **Docker**, you can understand the pipeline of deployment clearly
 - Use **Jest** for unit test, you can make it a **TDD** project to level up your personal skills
 
+## Highly recommend to use `pnpm` as a package manager
+
+## Set up project
+
+```bash
+$ pnpm setup
+```
+
 ## Install dependencies
 
 ```bash
-$ npm i
+$ pnpm install
 ```
 
 ## Start up development
 
 ```bash
-$ npm start
+$ pnpm start
 ```
 
 ### Then open http://localhost:8080/ to see your app
@@ -28,26 +36,38 @@ $ npm start
 ## Build for deploy
 
 ```bash
-$ npm run build
+$ pnpm build
 ```
 
 ## Check code formation
 
 ```bash
-$ npm run lint
+$ pnpm lint
 ```
 
 ## Lint to correct code formation
 
 ```bash
-$ npm run lint:fix
-$ npm run prettify
+$ pnpm lint:fix
+$ pnpm prettify
 ```
+
+## Unit test
+
+> Use `jest` for tesing but highly recommend to use `mocha` + `chai`.
+
+### For test running
+
+```bash
+$ pnpm test
+```
+
+> It is a running with `watch` mode, you can change to other modes.
 
 ## Docker for development
 
 ```bash
-$ npm run docker:dev
+$ pnpm docker:dev
 ```
 
 ### If you have not installed node && npm, try the command below
@@ -61,7 +81,7 @@ $ docker build -f Dockerfile.dev -t dev:builder . && docker run -v ${PWD}:/app -
 ## Docker for deploy
 
 ```bash
-$ npm run docker:deploy
+$ pnpm docker:deploy
 ```
 
 ### If you have not installed node && npm, try the command below
