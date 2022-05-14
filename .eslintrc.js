@@ -8,8 +8,9 @@ module.exports = {
   },
   parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 9,
     sourceType: 'module',
+    requireConfigFile: false,
     ecmaFeatures: {
       jsx: true,
       experimentalObjectRestSpread: true,
