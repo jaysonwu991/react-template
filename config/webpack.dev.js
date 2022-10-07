@@ -6,6 +6,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 
 module.exports = {
   mode: 'development',
+  stats: 'errors-warnings',
   devtool: 'eval-cheap-module-source-map',
   entry: [path.resolve(__dirname, '../src/index.js')],
   output: {
@@ -84,7 +85,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              implementation: require('sass'),
+              implementation: require('sass-embedded'),
             },
           },
         ],

@@ -1,3 +1,9 @@
+## 1.3.0
+
+- Update packages to the latest
+- Replace `sass` with `sass-embedded`
+- Set `errors-warnings` to `stats` for `Webpack`
+
 ## 1.2.0
 
 - Update packages to the latest
