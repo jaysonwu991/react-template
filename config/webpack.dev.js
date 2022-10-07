@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   stats: 'errors-warnings',
   devtool: 'eval-cheap-module-source-map',
-  entry: [path.resolve(__dirname, '../src/index.js')],
+  entry: [path.resolve(__dirname, '../src/index.jsx')],
   output: {
     publicPath: '/',
     filename: '[name].bundle.js',

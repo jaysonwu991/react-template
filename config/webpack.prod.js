@@ -15,7 +15,7 @@ module.exports = {
   stats: 'errors-warnings',
   target: ['es5', 'web'],
   entry: {
-    app: path.resolve(__dirname, '../src/index.js'),
+    app: path.resolve(__dirname, '../src/index.jsx'),
     vendor: ['react', 'react-dom'],
   },
   output: {
