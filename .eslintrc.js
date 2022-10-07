@@ -14,8 +14,13 @@ module.exports = {
       jsx: true,
       experimentalObjectRestSpread: true,
     },
+    babelOptions: {
+      parserOpts: {
+        plugins: ['jsx'],
+      },
+    },
   },
-  plugins: ['babel', 'react', 'import', 'prettier', 'react-hooks'],
+  plugins: ['react', 'react-hooks', 'prettier'],
   extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier/prettier'],
   settings: {
     react: {
@@ -30,8 +35,6 @@ module.exports = {
     'jsx-quotes': [2, 'prefer-single'],
     'object-curly-spacing': [2, 'always'],
     'array-bracket-spacing': [2, 'never'],
-    'import/no-duplicates': 2,
-    'import/named': 2,
     'react/no-typos': 2,
     'react/no-unused-state': 2,
     'react/jsx-no-bind': 2,
@@ -41,7 +44,6 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'array-callback-return': 2,
     'consistent-return': 2,
-    'babel/no-invalid-this': 2,
     'comma-spacing': [2, { before: false, after: true }],
     'comma-dangle': [
       2,
