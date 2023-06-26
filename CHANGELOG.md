@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Update packages to the latest
+
 ## 2.0.0
 
 - Replace `babel` with `swc`
