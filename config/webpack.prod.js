@@ -41,7 +41,6 @@ module.exports = {
             options: {
               jsc: {
                 parser: {
-                  jsx: true,
                   dynamicImport: true,
                   syntax: 'ecmascript',
                 },

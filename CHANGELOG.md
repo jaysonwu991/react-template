@@ -1,3 +1,8 @@
+## 2.0.2
+
+- Update packages to the latest
+- Remove unused option `jsx` from `swc-loader`
+
 ## 2.0.1
 
 - Update packages to the latest
