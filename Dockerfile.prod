@@ -4,7 +4,7 @@
 # why alpine? Alpine Linux is a security-oriented, lightweight
 # Linux distribution. how small? how about 5Mb?
 # in comparison ubuntu 18.04 is about 1.8Gb
-FROM node:12 as jikerweb
+FROM node:18 as web
 
 # set working directory
 # this is the working folder in the container
@@ -38,7 +38,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # copy the build folder from react to the root of nginx (www)
-COPY --from=jikerweb /app/dist /usr/share/nginx/html
+COPY --from=web /app/dist /usr/share/nginx/html
 
 # --------- start: only for those using react router ----------
 
