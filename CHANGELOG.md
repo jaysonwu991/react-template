@@ -1,3 +1,9 @@
+## 3.0.0
+
+- Update packages to the latest
+- Webpack version > 5
+- Node.js version > 18
+
 ## 2.0.2
 
 - Update packages to the latest
